@@ -685,6 +685,121 @@ li::marker {
   color: var(--gold-light);
 }
 
+/* Perfume Review Cards */
+.perfume-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 1.75rem;
+  margin: 2rem 0;
+  transition: var(--transition);
+}
+
+.perfume-card:hover {
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.perfume-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 0.75rem;
+}
+
+.perfume-name {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-family: var(--font-serif);
+}
+
+.perfume-category {
+  font-size: 0.85rem;
+  color: var(--gold-light);
+  margin-top: 0.25rem;
+  letter-spacing: 0.02em;
+}
+
+.perfume-desc {
+  margin: 1rem 0;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Fragrance Pyramid Grid */
+.pyramid-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.pyramid-box {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  padding: 0.9rem;
+}
+
+.pyramid-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gold-primary);
+  margin-bottom: 0.35rem;
+}
+
+.pyramid-notes {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #d1d5db;
+  line-height: 1.5;
+}
+
+/* Tip Cards (9 Numbered Tips) */
+.tip-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--gold-primary);
+  border-radius: 0 8px 8px 0;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  transition: var(--transition);
+}
+
+.tip-card:hover {
+  border-color: rgba(212, 175, 55, 0.5);
+  transform: translateX(4px);
+  background: var(--bg-card-hover);
+}
+
+.tip-title {
+  margin: 0 0 0.5rem 0;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-family: var(--font-serif);
+}
+
+.tip-text {
+  margin: 0;
+  color: #d1d5db;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+  .pyramid-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Highlight & Callout Boxes */
 .callout-box {
   background: var(--bg-card);
