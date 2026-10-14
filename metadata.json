@@ -1,0 +1,8 @@
+{
+  "name": "Scentwise - Men's Perfumes & Fragrance Guide",
+  "description": "Discover the best perfumes for men, budget fragrance reviews under 3000, longevity tips, and EDP vs EDT concentration guides.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
