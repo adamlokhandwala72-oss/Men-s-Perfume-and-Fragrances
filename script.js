@@ -1,10 +1,9 @@
 /**
  * Scentwise - Vanilla JavaScript
- * Mobile Navigation Toggle and Interactive FAQ Accordions
+ * Mobile Navigation Toggle Only
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile Navigation Toggle
   const menuToggle = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('.nav-links');
 
@@ -40,18 +39,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-
-  // FAQ Accordion Toggle
-  const faqQuestions = document.querySelectorAll('.faq-question');
-  faqQuestions.forEach(question => {
-    question.addEventListener('click', () => {
-      const item = question.closest('.faq-item');
-      if (item) {
-        const isOpen = item.classList.contains('open');
-        // Toggle current item
-        item.classList.toggle('open', !isOpen);
-        question.setAttribute('aria-expanded', String(!isOpen));
-      }
-    });
-  });
 });
